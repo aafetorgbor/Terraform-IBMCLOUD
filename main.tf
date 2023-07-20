@@ -9,8 +9,8 @@ terraform {
     skip_metadata_api_check     = true
     endpoint                    = "s3.us-east.cloud-object-storage.appdomain.cloud"
 
-    access_key                  = "var.access_key"
-    secret_key                  = "var.secret_key"
+    access_key                  = "982265d700cd4f6490990f5b6f841ac1"
+    secret_key                  = "21172b38fe830d52d13593487c4b735b16d9026e75a20f47"
   }
 }
 
