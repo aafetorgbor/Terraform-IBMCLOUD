@@ -1,18 +1,3 @@
-# Terraform remote state in ibm cloud object storage
-terraform {
-  backend "s3" {
-    bucket                      = "my-cos-bucket"
-    key                         = "ibmcloud-project-state-file/terraform.tfstate"
-    region                      = "us-east"
-    skip_region_validation      = true
-    skip_credentials_validation = true
-    skip_metadata_api_check     = true
-    endpoint                    = "s3.us-east.cloud-object-storage.appdomain.cloud"
-
-    access_key                  = "982265d700cd4f6490990f5b6f841ac1"
-    secret_key                  = "21172b38fe830d52d13593487c4b735b16d9026e75a20f47"
-  }
-}
 
 # Terraform for IBM provide (REQUIRED)
 terraform {
