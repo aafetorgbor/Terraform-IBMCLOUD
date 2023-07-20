@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {
     bucket                      = "my-cos-bucket"
-    key                         = "ibmcloud-project/terraform.tfstate"
+    key                         = "ibmcloud-project-state-file/terraform.tfstate"
     region                      = "us-east"
     skip_region_validation      = true
     skip_credentials_validation = true
