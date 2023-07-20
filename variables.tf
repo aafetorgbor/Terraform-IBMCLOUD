@@ -26,7 +26,7 @@ variable "access_key" {
   sensitive   = true
 }
 
-variable "secret_key_key" {
+variable "secret_key" {
   description = "Remote state file secret key"
   type        = string
   default = ""
