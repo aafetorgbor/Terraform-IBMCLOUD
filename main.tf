@@ -34,7 +34,7 @@ data "ibm_resource_group" "group" {
 }
 
 resource "ibm_code_engine_project" "project_name" {
-  name              = "terraform-project-dev1"
+  name              = "terraform-project-dev2"
   resource_group_id = data.ibm_resource_group.group.id
 
   lifecycle {
