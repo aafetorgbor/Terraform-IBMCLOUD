@@ -57,7 +57,7 @@ resource "ibm_code_engine_secret" "registry" {
   data = {
         server    = "us.icr.io"
         username  = "iamapikey"
-        password  = "ese_serfn_ddd"
+        password  = var.registry_apikey
         email     = "abc@gmail.com"
   }
 
