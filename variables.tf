@@ -32,3 +32,10 @@ variable "secret_key" {
   default = ""
   sensitive   = true
 }
+
+variable "registry_apikey" {
+  description = "Registry access apikey or password"
+  type        = string
+  default = ""
+  sensitive   = true
+}
