@@ -21,12 +21,12 @@ data "ibm_resource_group" "group" {
 resource "ibm_code_engine_project" "project_name" {
   name              = "terraform-project-dev4"
   resource_group_id = data.ibm_resource_group.group.id
-
+ /*
   lifecycle {
     prevent_destroy = true
     ignore_changes = all
-
   }
+*/
 
 }
 
@@ -40,12 +40,12 @@ resource "ibm_code_engine_secret" "secrets" {
         elastic_password  = var.elastic_password
         database_password = var.database_password
   }
-
+/*
   lifecycle {
     prevent_destroy = true
     ignore_changes = all
-
   }
+*/
 }
 
 
@@ -60,12 +60,12 @@ resource "ibm_code_engine_secret" "registry" {
         password  = var.registry_apikey
         email     = "abc@gmail.com"
   }
-
+/*
   lifecycle {
     prevent_destroy = true
     ignore_changes = all
-
   }
+*/
 }
 
 
@@ -103,12 +103,12 @@ resource "ibm_code_engine_app" "code_engine_app" {
     type  = "secret_full_reference"
     reference = "my-secret" 
   }
-
+/*
   lifecycle {
     prevent_destroy = true
     ignore_changes = all 
-
   }
+*/
 }
 
 
